@@ -3,7 +3,7 @@ const createManager = function(manager) {
     <div class="card-header"><h3>Manager</h3></div>
     <div class="card-body text-dark">
     <h5 class="card-title">Name: ${manager.employeeName}</h5>
-    <p class="card-text">ID: ${manager.id}<br> Email: ${manager.email}<br> Office Number: ${manager.officeNumber}</p>
+    <p class="card-text">ID: ${manager.id}<br><a href="mailto:${manager.email}">Contact Me!</a><br> Office Number: ${manager.officeNumber}</p>
     </div>
 </div>`
 }
@@ -13,7 +13,7 @@ const createIntern = function(intern) {
     <div class="card-header"><h3>Intern</h3></div>
     <div class="card-body text-dark">
     <h5 class="card-title"> Name: ${intern.employeeName}</h5>
-    <p class="card-text"> ID: ${intern.id}<br> Email: ${intern.email}<br> School: ${intern.school}</p>
+    <p class="card-text"> ID: ${intern.id}<br><a href="mailto:${intern.email}">Contact Me!</a><br> School: ${intern.school}</p>
     </div>
 </div>`
 }
@@ -23,7 +23,7 @@ const createEngineer = function(engineer) {
     <div class="card-header"><h3>Engineer</h3></div>
     <div class="card-body text-dark">
     <h5 class="card-title"> Name: ${engineer.employeeName}</h5>
-    <p class="card-text"> ID: ${engineer.id}<br> Email: ${engineer.email}<br> Github: ${engineer.github}</p>
+    <p class="card-text"> ID: ${engineer.id}<br><a href="mailto:${engineer.email}">Contact Me!</a><br> Github: <a href="url">https://github.com/${engineer.github}</a></p>
     </div>
 </div>`
 }
@@ -61,13 +61,17 @@ function generateHTML(allEmployees) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Team List</title>
-   
-    <link rel="stylesheet" href="output/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+    <h1>My Team</h2>
+</header>
+<section>
     ${engineerArray.join('')}
     ${managerArray.join('')}
     ${internArray.join('')}
+</section>
    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

@@ -1,10 +1,49 @@
 /* do some CSS stuff in here */
 body {
-    background-color: black;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    margin-left: 35%;
-    margin-right: 35%;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    background-color: rgb(236, 171, 117);
+}
+
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    color: white;
+    background-color: rgb(255, 154, 2);
+}
+
+header h1 {
+    font-size: 225%;
+}
+
+section {
+    width: 100vw;
+    padding: 4vh 0 1vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    margin: 15px;
+    width: 350px;
+    height: 325px;
+    box-shadow: 5px 5px 5px #f88502;
+}
+
+.card-header {
+    background-color: rgb(252, 138, 32);
+    color: white;
+}
+
+
+@media screen and (min-width: 992px) {
+    section {
+        max-width: 1200px;
+    }
 }
