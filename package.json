@@ -2,5 +2,27 @@
   "dependencies": {
     "inquirer": "^8.1.2",
     "jest": "^27.0.6"
-  }
+  },
+  "name": "employee-oop",
+  "description": "",
+  "version": "1.0.0",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glenhood/Employee-OOP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glenhood/Employee-OOP/issues"
+  },
+  "homepage": "https://github.com/glenhood/Employee-OOP#readme"
 }

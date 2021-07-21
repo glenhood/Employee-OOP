@@ -1,1 +1,10 @@
 /* do some CSS stuff in here */
+body {
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
