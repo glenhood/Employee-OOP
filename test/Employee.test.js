@@ -44,7 +44,7 @@ describe("Employee", () => {
         expect(newEmployee.getEmail()).toBe(testValue);
     });
     it("See if getRole returns employee", () => {
-        const testValue = "test@test.com";
+        const testValue = "Employee";
         const newEmployee = new Employee(testValue);
         expect(newEmployee.getRole()).toBe("Employee");
     });
