@@ -23,7 +23,7 @@ const createEngineer = function(engineer) {
     <div class="card-header"><h3>Engineer</h3></div>
     <div class="card-body text-dark">
     <h5 class="card-title"> Name: ${engineer.employeeName}</h5>
-    <p class="card-text"> ID: ${engineer.id}<br><a href="mailto:${engineer.email}">Contact Me!</a><br> Github: <a href="url">https://github.com/${engineer.github}</a></p>
+    <p class="card-text"> ID: ${engineer.id}<br><a href="mailto:${engineer.email}">Contact Me!</a><br><a href=https://github.com/${engineer.github}>Github</a></p>
     </div>
 </div>`
 }
